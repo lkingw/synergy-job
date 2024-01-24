@@ -1,4 +1,4 @@
-module github.com/suyuan32/simple-admin-job
+module github.com/iot-synergy/synergy-job
 
 go 1.21.0
 
@@ -7,8 +7,8 @@ replace github.com/zeromicro/go-zero v1.6.1 => github.com/suyuan32/simple-admin-
 require (
 	entgo.io/ent v0.12.5
 	github.com/hibiken/asynq v0.24.1
+	github.com/iot-synergy/synergy-common v1.3.3
 	github.com/redis/go-redis/v9 v9.4.0
-	github.com/suyuan32/simple-admin-common v1.3.3
 	github.com/zeromicro/go-zero v1.6.1
 	google.golang.org/grpc v1.60.1
 	google.golang.org/protobuf v1.32.0

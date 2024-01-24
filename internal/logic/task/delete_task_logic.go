@@ -3,15 +3,15 @@ package task
 import (
 	"context"
 
-	"github.com/suyuan32/simple-admin-job/ent"
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/ent/tasklog"
-	"github.com/suyuan32/simple-admin-job/internal/svc"
-	"github.com/suyuan32/simple-admin-job/internal/utils/dberrorhandler"
-	"github.com/suyuan32/simple-admin-job/internal/utils/entx"
-	"github.com/suyuan32/simple-admin-job/types/job"
+	"github.com/iot-synergy/synergy-job/ent"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/tasklog"
+	"github.com/iot-synergy/synergy-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/internal/utils/dberrorhandler"
+	"github.com/iot-synergy/synergy-job/internal/utils/entx"
+	"github.com/iot-synergy/synergy-job/types/job"
 
-	"github.com/suyuan32/simple-admin-common/i18n"
+	"github.com/iot-synergy/synergy-common/i18n"
 	"github.com/zeromicro/go-zero/core/logx"
 )
 

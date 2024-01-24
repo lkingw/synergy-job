@@ -10,9 +10,9 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/suyuan32/simple-admin-job/ent/predicate"
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/ent/tasklog"
+	"github.com/iot-synergy/synergy-job/ent/predicate"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/tasklog"
 )
 
 // TaskLogQuery is the builder for querying TaskLog entities.

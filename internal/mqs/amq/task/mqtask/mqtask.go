@@ -21,7 +21,7 @@ import (
 
 	"github.com/hibiken/asynq"
 
-	"github.com/suyuan32/simple-admin-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/internal/svc"
 )
 
 type MQTask struct {

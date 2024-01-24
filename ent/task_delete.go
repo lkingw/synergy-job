@@ -8,8 +8,8 @@ import (
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
 	"entgo.io/ent/schema/field"
-	"github.com/suyuan32/simple-admin-job/ent/predicate"
-	"github.com/suyuan32/simple-admin-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/predicate"
+	"github.com/iot-synergy/synergy-job/ent/task"
 )
 
 // TaskDelete is the builder for deleting a Task entity.

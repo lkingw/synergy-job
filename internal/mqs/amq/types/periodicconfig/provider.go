@@ -17,12 +17,13 @@ package periodicconfig
 import (
 	"context"
 	"fmt"
+
 	"github.com/zeromicro/go-zero/core/logx"
 
 	"github.com/hibiken/asynq"
-	"github.com/suyuan32/simple-admin-common/enum/common"
-	"github.com/suyuan32/simple-admin-job/ent"
-	"github.com/suyuan32/simple-admin-job/ent/task"
+	"github.com/iot-synergy/synergy-common/enum/common"
+	"github.com/iot-synergy/synergy-job/ent"
+	"github.com/iot-synergy/synergy-job/ent/task"
 )
 
 type EntConfigProvider struct {

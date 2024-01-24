@@ -6,8 +6,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/ent/tasklog"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/tasklog"
 )
 
 const errInvalidPage = "INVALID_PAGE"

@@ -5,19 +5,20 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/suyuan32/simple-admin-common/i18n"
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/internal/enum/taskresult"
-	"github.com/suyuan32/simple-admin-job/internal/mqs/amq/types/pattern"
-	"github.com/suyuan32/simple-admin-job/internal/utils/dberrorhandler"
+	"time"
+
+	"github.com/iot-synergy/synergy-common/i18n"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/internal/enum/taskresult"
+	"github.com/iot-synergy/synergy-job/internal/mqs/amq/types/pattern"
+	"github.com/iot-synergy/synergy-job/internal/utils/dberrorhandler"
 	"github.com/zeromicro/go-zero/core/errorx"
 	"github.com/zeromicro/go-zero/core/logx"
-	"time"
 
 	"github.com/hibiken/asynq"
 
-	"github.com/suyuan32/simple-admin-job/internal/mqs/amq/types/payload"
-	"github.com/suyuan32/simple-admin-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/internal/mqs/amq/types/payload"
+	"github.com/iot-synergy/synergy-job/internal/svc"
 )
 
 type HelloWorldHandler struct {

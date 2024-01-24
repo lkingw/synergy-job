@@ -3,17 +3,17 @@ package base
 import (
 	"context"
 
-	"github.com/suyuan32/simple-admin-job/internal/utils/dberrorhandler"
+	"github.com/iot-synergy/synergy-job/internal/utils/dberrorhandler"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"github.com/suyuan32/simple-admin-common/enum/errorcode"
-	"github.com/suyuan32/simple-admin-common/i18n"
-	"github.com/suyuan32/simple-admin-common/msg/logmsg"
+	"github.com/iot-synergy/synergy-common/enum/errorcode"
+	"github.com/iot-synergy/synergy-common/i18n"
+	"github.com/iot-synergy/synergy-common/msg/logmsg"
 	"github.com/zeromicro/go-zero/core/errorx"
 
-	"github.com/suyuan32/simple-admin-job/internal/mqs/amq/types/pattern"
-	"github.com/suyuan32/simple-admin-job/internal/svc"
-	"github.com/suyuan32/simple-admin-job/types/job"
+	"github.com/iot-synergy/synergy-job/internal/mqs/amq/types/pattern"
+	"github.com/iot-synergy/synergy-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/types/job"
 
 	"github.com/zeromicro/go-zero/core/logx"
 )

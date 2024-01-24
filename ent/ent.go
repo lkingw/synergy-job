@@ -12,8 +12,8 @@ import (
 	"entgo.io/ent"
 	"entgo.io/ent/dialect/sql"
 	"entgo.io/ent/dialect/sql/sqlgraph"
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/ent/tasklog"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/tasklog"
 )
 
 // ent aliases to avoid import conflicts in user's code.

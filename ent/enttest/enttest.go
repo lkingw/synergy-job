@@ -5,12 +5,12 @@ package enttest
 import (
 	"context"
 
-	"github.com/suyuan32/simple-admin-job/ent"
+	"github.com/iot-synergy/synergy-job/ent"
 	// required by schema hooks.
-	_ "github.com/suyuan32/simple-admin-job/ent/runtime"
+	_ "github.com/iot-synergy/synergy-job/ent/runtime"
 
 	"entgo.io/ent/dialect/sql/schema"
-	"github.com/suyuan32/simple-admin-job/ent/migrate"
+	"github.com/iot-synergy/synergy-job/ent/migrate"
 )
 
 type (

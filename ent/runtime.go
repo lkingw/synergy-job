@@ -5,9 +5,9 @@ package ent
 import (
 	"time"
 
-	"github.com/suyuan32/simple-admin-job/ent/schema"
-	"github.com/suyuan32/simple-admin-job/ent/task"
-	"github.com/suyuan32/simple-admin-job/ent/tasklog"
+	"github.com/iot-synergy/synergy-job/ent/schema"
+	"github.com/iot-synergy/synergy-job/ent/task"
+	"github.com/iot-synergy/synergy-job/ent/tasklog"
 )
 
 // The init function reads all schema descriptors with runtime code

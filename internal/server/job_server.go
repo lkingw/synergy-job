@@ -6,11 +6,11 @@ package server
 import (
 	"context"
 
-	"github.com/suyuan32/simple-admin-job/internal/logic/base"
-	"github.com/suyuan32/simple-admin-job/internal/logic/task"
-	"github.com/suyuan32/simple-admin-job/internal/logic/tasklog"
-	"github.com/suyuan32/simple-admin-job/internal/svc"
-	"github.com/suyuan32/simple-admin-job/types/job"
+	"github.com/iot-synergy/synergy-job/internal/logic/base"
+	"github.com/iot-synergy/synergy-job/internal/logic/task"
+	"github.com/iot-synergy/synergy-job/internal/logic/tasklog"
+	"github.com/iot-synergy/synergy-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/types/job"
 )
 
 type JobServer struct {

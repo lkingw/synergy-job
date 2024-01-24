@@ -3,11 +3,11 @@ package tasklog
 import (
 	"context"
 
-	"github.com/suyuan32/simple-admin-job/internal/svc"
-	"github.com/suyuan32/simple-admin-job/internal/utils/dberrorhandler"
-	"github.com/suyuan32/simple-admin-job/types/job"
+	"github.com/iot-synergy/synergy-job/internal/svc"
+	"github.com/iot-synergy/synergy-job/internal/utils/dberrorhandler"
+	"github.com/iot-synergy/synergy-job/types/job"
 
-	"github.com/suyuan32/simple-admin-common/utils/pointy"
+	"github.com/iot-synergy/synergy-common/utils/pointy"
 	"github.com/zeromicro/go-zero/core/logx"
 )
 
