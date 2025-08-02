@@ -1,3 +1,11 @@
+FROM golang:1.21-alpine  as builder
+
+ENV GO111MODULE=on
+ENV GOPROXY=https://goproxy.cn
+COPY . /app
+WORKDIR /app
+RUN go mod tidy --compat=1.21 && go build -o /app/job-rpc job.go
+
 FROM alpine:3.19
 
 # Define the project name | 定义项目名称
@@ -13,13 +21,9 @@ WORKDIR /app
 ENV PROJECT=${PROJECT}
 ENV CONFIG_FILE=${CONFIG_FILE}
 
-ENV TZ=Asia/Shanghai
-RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.aliyun.com/g' /etc/apk/repositories
-RUN apk update --no-cache && apk add --no-cache tzdata
-
-COPY ./${PROJECT}_rpc ./
-COPY ./etc/${CONFIG_FILE} ./etc/
+COPY --from=builder /app/job-rpc ./
+COPY --from=builder /app/etc/${CONFIG_FILE} ./etc/
 
 EXPOSE 9105
 
-ENTRYPOINT ./${PROJECT}_rpc -f etc/${CONFIG_FILE}
+ENTRYPOINT ./job-rpc -f etc/${CONFIG_FILE}
